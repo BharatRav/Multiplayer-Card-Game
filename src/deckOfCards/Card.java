@@ -1,3 +1,5 @@
+package deckOfCards;
+
 public class Card {
     private int type,value;
     boolean isActionCard;
@@ -20,6 +22,8 @@ public class Card {
         String finalCard = cardValue[value]+" of "+cardType[type];
         if (isActionCard) {
             finalCard = finalCard+" [Action Card]";
+        } else {
+            finalCard+=" [Action Card]";
         }
         return  finalCard;
     }
